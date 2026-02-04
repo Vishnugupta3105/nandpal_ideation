@@ -1,7 +1,6 @@
 # Nandpal - AI-powered Moral & Emotional Growth Companion
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-nandpal.com-gold?style=for-the-badge)](https://nandpal.com)
-![Nandpal Logo](https://img.shields.io/badge/Nandpal-AI%20Companion-gold?style=for-the-badge)
 
 ## 🌟 Project Overview
 
