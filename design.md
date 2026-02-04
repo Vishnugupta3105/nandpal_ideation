@@ -1,8 +1,12 @@
-# Nandpal - Design Document
+# NANDPAL V3 - Complete System Design Document
 
-## System Architecture Overview
+## 📱 Project Overview
 
-Nandpal follows a modern, scalable microservices architecture designed to handle millions of users while maintaining low latency and high availability. The system is built with security, privacy, and cultural sensitivity as core principles.
+**NANDPAL V3** is a comprehensive AI-powered spiritual and educational mobile application built with React Native/Expo and Node.js. The app combines Krishna consciousness teachings with gamification, interactive features, and AI-driven engagement to create an immersive spiritual learning platform for users of all ages.
+
+**Key Theme**: Krishna Consciousness with divine aesthetics and spiritual wisdom teachings
+
+## 🏗️ System Architecture
 
 ### High-Level Architecture
 
@@ -16,64 +20,63 @@ Nandpal follows a modern, scalable microservices architecture designed to handle
                                   │
                     ┌─────────────▼─────────────┐
                     │      API Gateway          │
-                    │    (Kong/AWS API GW)      │
+                    │    (Express.js + CORS)    │
                     └─────────────┬─────────────┘
                                   │
          ┌────────────────────────┼────────────────────────┐
          │                        │                        │
 ┌────────▼────────┐    ┌─────────▼─────────┐    ┌─────────▼─────────┐
 │  User Service   │    │   Content Service │    │    AI Service     │
-│   (Node.js)     │    │    (Node.js)      │    │   (Python/Node)   │
+│   (Node.js)     │    │    (Node.js)      │    │   (Gemini API)    │
 └─────────────────┘    └───────────────────┘    └───────────────────┘
          │                        │                        │
 ┌────────▼────────┐    ┌─────────▼─────────┐    ┌─────────▼─────────┐
-│   User DB       │    │   Content DB      │    │   Vector DB       │
-│  (MongoDB)      │    │  (MongoDB)        │    │   (Pinecone)      │
+│   MongoDB       │    │   Redis Cache     │    │   Cloudinary      │
+│   Atlas         │    │   (1hr TTL)       │    │   (Media CDN)     │
 └─────────────────┘    └───────────────────┘    └───────────────────┘
 ```
 
 ## Technology Stack
 
 ### Frontend (Mobile App)
-- **Framework**: React Native with Expo
-- **Language**: TypeScript
-- **State Management**: Redux Toolkit + RTK Query
-- **Navigation**: React Navigation v6
-- **UI Components**: NativeBase + Custom Components
-- **Animations**: React Native Reanimated 3
-- **Local Storage**: AsyncStorage + SQLite
-- **Push Notifications**: Expo Notifications
+- **Framework**: React Native 0.79.5 with Expo 53.0.17
+- **Language**: TypeScript 5.9.2
+- **Routing**: Expo Router 5.1.3
+- **Styling**: NativeWind 4.1.23 (Tailwind for React Native)
+- **State Management**: React Hooks + AsyncStorage
+- **Navigation**: React Navigation with Bottom Tabs
+- **Media**: Expo AV (audio/video), React Native Voice
+- **UI Components**: Custom component library with Krishna-inspired design system
 
 ### Backend Services
-- **Runtime**: Node.js 18+ with Express.js
-- **Language**: TypeScript
-- **API Style**: RESTful APIs + GraphQL for complex queries
-- **Authentication**: JWT + OAuth 2.0
-- **Rate Limiting**: Redis-based rate limiting
-- **Caching**: Redis for session and content caching
-- **File Storage**: AWS S3 for media content
+- **Runtime**: Node.js (v16.0.0+)
+- **Framework**: Express.js 4.18.2
+- **Language**: TypeScript 5.9.2
+- **Authentication**: JWT + bcryptjs (30-day expiration)
+- **Rate Limiting**: express-rate-limit (100 req/15min)
+- **Security**: Helmet 7.0.0, CORS enabled
+- **File Upload**: Multer for media handling
 
 ### Database Layer
-- **Primary Database**: MongoDB Atlas (Multi-region)
-- **Caching Layer**: Redis Cluster
-- **Vector Database**: Pinecone (for AI embeddings)
-- **Analytics Database**: ClickHouse
-- **Search Engine**: Elasticsearch
+- **Primary Database**: MongoDB 7.5.0 (via Mongoose)
+- **Caching Layer**: Redis (via ioRedis 5.8.2, 1-hour TTL)
+- **Search**: MongoDB text indexes
+- **Analytics**: MongoDB aggregation pipelines
 
-### AI & ML Stack
-- **LLM Integration**: OpenAI GPT-4 + Anthropic Claude
-- **Custom AI Service**: Python FastAPI
-- **Vector Embeddings**: OpenAI Embeddings
-- **Content Moderation**: Custom ML models
-- **Sentiment Analysis**: Hugging Face Transformers
+### AI & External Services
+- **Primary AI**: Google Gemini API (Krishna conversations)
+- **Fallback AI**: Replicate API (LLaMA 2)
+- **Text-to-Speech**: ElevenLabs API (Krishna voice)
+- **Speech Recognition**: @react-native-voice/voice
+- **Media CDN**: Cloudinary (video/image hosting)
+- **Language Detection**: franc 6.2.0
 
 ### Infrastructure & DevOps
-- **Cloud Provider**: AWS (Multi-AZ deployment)
-- **Container Orchestration**: Amazon EKS
-- **CI/CD**: GitHub Actions + AWS CodePipeline
-- **Monitoring**: DataDog + AWS CloudWatch
-- **Error Tracking**: Sentry
-- **Load Balancer**: AWS Application Load Balancer
+- **Backend Hosting**: Render.com
+- **Database**: MongoDB Atlas (cloud)
+- **CDN**: Cloudinary global distribution
+- **Mobile Deployment**: Expo EAS Build
+- **Environment**: Production + Development configs
 
 ## Detailed Component Design
 

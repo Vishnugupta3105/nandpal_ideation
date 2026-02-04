@@ -1,38 +1,42 @@
-# Nandpal – AI-powered Moral & Emotional Growth Companion
+# NANDPAL V3 – AI-powered Krishna Consciousness Companion
 
 ## Project Overview
 
-Nandpal is an innovative AI-powered mobile application designed to nurture moral values, emotional balance, and daily discipline in Indian children and young adults through the timeless wisdom of the Bhagavad Gita and rich Indian cultural traditions.
+**NANDPAL V3** is a comprehensive AI-powered spiritual and educational mobile application built with React Native/Expo and Node.js. The app combines Krishna consciousness teachings with gamification, interactive features, and AI-driven engagement to create an immersive spiritual learning platform for users of all ages.
+
+**Key Theme**: Krishna Consciousness with divine aesthetics and spiritual wisdom teachings from the Bhagavad Gita, Ramayana, and Mahabharata.
 
 ## Problem Statement
 
 ### Current Challenges
-- **Digital Disconnect**: Indian children and youth spend increasing time on digital platforms that provide entertainment but lack moral grounding, emotional safety, and cultural relevance
-- **Parental Struggle**: Parents and educators find it challenging to teach values, discipline, and emotional resilience in ways that resonate with the digital generation
-- **Cultural Gap**: Modern educational systems often lack integration of traditional Indian philosophical teachings
-- **Mental Health Crisis**: Rising anxiety, depression, and emotional instability among youth due to lack of proper guidance and support systems
+- **Spiritual Disconnect**: Modern youth lack access to authentic Krishna consciousness teachings and spiritual guidance in an engaging digital format
+- **Cultural Gap**: Traditional spiritual practices are not being effectively transmitted to the digital generation
+- **Lack of Gamified Spirituality**: Existing spiritual apps lack the engagement and reward systems that resonate with younger audiences
+- **Limited AI Integration**: No comprehensive AI companion exists that provides Krishna-based wisdom and guidance
+- **Fragmented Learning**: Spiritual content is scattered across platforms without integrated progress tracking
 
 ### Market Need
-- 472 million children in India need value-based digital solutions
-- 68% of parents report difficulty in teaching moral values to their children
-- Growing demand for culturally relevant mental health and wellness apps
-- Need for safe, non-judgmental AI companions for emotional support
+- 472 million children in India need culturally authentic spiritual guidance
+- Growing demand for AI-powered spiritual companions
+- Need for gamified spiritual practice platforms
+- Requirement for comprehensive Krishna consciousness education apps
+- Demand for safe, family-friendly spiritual content
 
 ## Goals and Objectives
 
 ### Primary Goals
-- **Value-Based Guidance**: Provide AI-powered moral guidance using Bhagavad Gita teachings in a safe, non-judgmental manner
-- **Daily Discipline**: Encourage consistent moral actions and self-reflection through gamified experiences
-- **Emotional Stability**: Build emotional resilience and self-awareness in users through interactive features
-- **Cultural Preservation**: Preserve and modernize Indian philosophical teachings for the digital generation
-- **Positive Habits**: Create a habit-forming, positive digital experience that replaces mindless scrolling
+- **Krishna Consciousness**: Provide authentic Krishna-based spiritual guidance through AI-powered conversations
+- **Gamified Spirituality**: Create engaging spiritual practices through blessing points, village building, and achievement systems
+- **Comprehensive Learning**: Offer structured scripture study through video series and interactive content
+- **Daily Practice**: Encourage consistent spiritual practices through moral walks, chanting, and meditation
+- **Community Building**: Foster spiritual community through leaderboards, sharing, and social features
 
 ### Success Metrics
-- **User Engagement**: 80% daily active users completing moral walks
-- **Streak Maintenance**: Average 15-day completion streaks
-- **Emotional Growth**: Measurable improvement in emotional intelligence scores
-- **Cultural Connection**: 90% user satisfaction with cultural relevance
-- **Parent Approval**: 85% parent recommendation rate
+- **Daily Engagement**: 85% daily active users completing spiritual activities
+- **Blessing Points**: Average 500+ blessing points earned per user monthly
+- **Chanting Practice**: 70% users maintaining regular chanting streaks
+- **Scripture Study**: 60% completion rate for video series
+- **AI Interaction**: 90% user satisfaction with Krishna AI conversations
 
 ## Target Audience
 
@@ -64,73 +68,100 @@ Nandpal is an innovative AI-powered mobile application designed to nurture moral
 ## Core Features
 
 ### 1. Daily Moral Walk 🚶‍♂️
-**Purpose**: Daily moral lessons inspired by Bhagavad Gita teachings
+**Purpose**: Daily spiritual lessons with practical Krishna consciousness applications
 
 **Components**:
-- **Morning Lesson**: Short story or verse from scriptures
-- **Real-life Action**: Practical, actionable task for the day
-- **Evening Reflection**: User input and self-assessment
-- **Progress Tracking**: Streak counters and completion analytics
-- **Adaptive Learning**: AI adjusts difficulty based on user engagement
+- **Video Lessons**: Instructional videos for each moral task (20 tasks total)
+- **Virtue-Based Tasks**: Actions focused on specific virtues (Compassion, Honesty, Devotion, etc.)
+- **Blessing Points Rewards**: 20-50 points per completed task with difficulty multipliers
+- **Progress Tracking**: Completion tracking and virtue score calculations
+- **Real-world Application**: Practical tasks that can be completed in daily life
 
-**Example Flow**:
-1. Morning: "Share Your Food with Friends" lesson with Bhagavad Gita verse
-2. Mission: "Share your lunch or snacks with a friend today"
-3. Evening: Reflection on the experience and lessons learned
+**Task Categories**:
+- Compassion tasks (helping others, kindness)
+- Honesty tasks (truthfulness, integrity)
+- Devotion tasks (spiritual practice, service)
+- Wisdom tasks (learning, teaching)
+- Courage tasks (standing up for dharma)
 
-### 2. Friend Kanha 🤖
-**Purpose**: AI-powered conversational companion for emotional support
+### 2. Friend Kanha (Krishna AI) 🤖
+**Purpose**: AI-powered Krishna consciousness companion for spiritual guidance
 
 **Capabilities**:
-- **Scriptural Responses**: All guidance rooted in Bhagavad Gita teachings
-- **Emotional Support**: Non-judgmental listening and advice
-- **Multilingual**: Supports Hindi and English with cultural context
-- **Safe Boundaries**: No predictions, medical advice, or fear-based guidance
-- **Personalized**: Learns user's emotional patterns and preferences
+- **Gemini API Integration**: Advanced AI responses using Google's Gemini model
+- **Gita References**: All responses include relevant Bhagavad Gita chapter and verse citations
+- **Contextual Wisdom**: Personalized guidance based on user's spiritual journey
+- **Voice Synthesis**: ElevenLabs TTS for Krishna's voice responses
+- **Conversation Memory**: Maintains chat history and context across sessions
+- **Multilingual Support**: Hindi, English, and Hinglish understanding
 
-**Conversation Examples**:
-- User: "I'm feeling anxious about exams"
-- Kanha: "Remember Krishna's teaching to Arjuna - focus on your effort, not the results. What study plan can we create together?"
+**Response Features**:
+- Spiritual guidance rooted in Krishna consciousness
+- Practical advice for daily challenges
+- Gita verse explanations and applications
+- Emotional support with divine perspective
+- Suggested spiritual practices
 
-### 3. Nandgaon Village 🏘️
-**Purpose**: Gamified progress visualization through virtual village building
+### 3. Nandgaon Village Building 🏘️
+**Purpose**: Gamified spiritual progress through virtual village construction
 
 **Mechanics**:
-- **Point System**: Earn points through positive actions and completed tasks
-- **Village Growth**: Points unlock buildings, decorations, and characters
-- **Visual Progress**: Village development represents personal moral growth
-- **Social Features**: Share village progress with friends and family
-- **Seasonal Events**: Special challenges and rewards during festivals
+- **Blessing Points Economy**: Spend points to build spiritual structures
+- **Virtue-Linked Buildings**: Each structure represents different virtues
+  - Temple (Devotion) - 100 points
+  - School (Wisdom) - 150 points
+  - Garden (Compassion) - 80 points
+  - Library (Knowledge) - 120 points
+- **Village Levels**: Progress through levels based on structures built
+- **Leaderboard System**: Compare village progress with other users
+- **Sharing Features**: Share village screenshots and achievements
 
 ### 4. Chanting & Meditation 🕉️
-**Purpose**: Digital spiritual practice tools
+**Purpose**: Digital spiritual practice tools for mantra meditation
 
 **Features**:
-- **Japa Counter**: Digital mala for mantra counting
-- **Guided Sessions**: Breathing exercises and meditation
-- **Mantra Library**: Collection of powerful Sanskrit mantras
-- **Progress Analytics**: Track consistency and duration
-- **Reminder System**: Gentle notifications for practice times
+- **Mantra Selection**: Hare Krishna, Krishna Krishna, and custom mantras
+- **Digital Counter**: Bead-based and digital counting interfaces
+- **Session Tracking**: Record chanting sessions with duration and count
+- **Blessing Points**: 30 points per chanting session
+- **Leaderboard**: Rankings based on total chanting count
+- **Reminder System**: Customizable chanting reminders
+- **Progress Analytics**: Daily, weekly, and monthly chanting statistics
 
-### 5. Shastrarth (Content Library) 📚
-**Purpose**: Curated spiritual and educational content
+### 5. Shastrarth (Scripture Library) 📚
+**Purpose**: Comprehensive video-based scripture education
 
-**Content Types**:
-- **Video Lessons**: Animated stories from Bhagavad Gita, Ramayana, Mahabharata
-- **Audio Content**: Devotional songs, mantras, and guided meditations
-- **Interactive Stories**: Choose-your-own-adventure moral dilemmas
-- **Structured Courses**: Progressive learning paths for different age groups
-- **Cultural Context**: Historical and philosophical background
+**Content Structure**:
+- **Scripture Series**: Organized collections (Bhagavad Gita, Ramayana, Mahabharata)
+- **Episode System**: Individual video lessons within each series
+- **Watch Progress**: Automatic tracking of viewing progress (90% = complete)
+- **Recommendations**: AI-suggested content based on interests
+- **Search & Filter**: Find content by category, topic, or keyword
+- **Subtitles & Transcripts**: Accessibility features for all content
 
-### 6. Profile & Analytics 📊
-**Purpose**: Personal growth tracking and insights
+**Categories**:
+- Scripture (Bhagavad Gita chapters)
+- Epics (Ramayana, Mahabharata stories)
+- Puranas (Krishna Leela, devotional stories)
+- Upanishads (Philosophical teachings)
 
-**Components**:
-- **Growth Dashboard**: Visual representation of moral development
-- **Streak Tracking**: Daily, weekly, and monthly consistency metrics
-- **Emotional Journal**: Mood tracking and reflection history
+### 6. Progress Analytics & Profile 📊
+**Purpose**: Comprehensive spiritual growth tracking
+
+**Metrics Tracked**:
+- **Blessing Points**: Current balance and total earned
+- **Spiritual Level**: 1-100+ based on total points
+- **Virtue Scores**: Individual progress in each virtue (0-100)
+- **Moral Score**: Overall spiritual development metric
+- **Activity Streaks**: Daily engagement tracking
 - **Achievement Badges**: Milestones and accomplishments
-- **Parent Dashboard**: Safe monitoring tools for guardians
+
+**Analytics Features**:
+- Daily, weekly, monthly progress reports
+- Virtue strength and weakness analysis
+- Engagement pattern insights
+- Goal setting and tracking
+- Parent dashboard (for younger users)
 
 ## User Journey
 
@@ -158,22 +189,34 @@ Nandpal is an innovative AI-powered mobile application designed to nurture moral
 ## Technical Requirements
 
 ### Performance
-- **Load Time**: App launch under 3 seconds
-- **Offline Mode**: Core features available without internet
-- **Battery Optimization**: Minimal battery drain
-- **Storage**: Under 100MB initial download
+- **App Startup**: Under 4 seconds with splash screen animation
+- **API Response**: < 200ms for cached content, < 5s for AI responses
+- **Video Streaming**: < 3s start time with range request support
+- **Real-time Features**: 60fps chanting counter, smooth animations
+- **Offline Support**: Core features available without internet
+
+### Technology Stack
+- **Frontend**: React Native 0.79.5 with Expo 53.0.17
+- **Backend**: Node.js with Express.js and TypeScript
+- **Database**: MongoDB Atlas with Redis caching
+- **AI Integration**: Google Gemini API for Krishna conversations
+- **Voice Services**: ElevenLabs TTS, React Native Voice recognition
+- **Media CDN**: Cloudinary for video and image delivery
+- **Authentication**: JWT tokens with 30-day expiration
 
 ### Security & Privacy
-- **Data Protection**: COPPA and GDPR compliant
-- **Content Safety**: AI responses filtered for age-appropriateness
-- **Parental Controls**: Comprehensive monitoring and restriction tools
-- **No Personal Data**: Minimal collection, maximum protection
+- **Data Protection**: JWT authentication, bcrypt password hashing
+- **Content Safety**: AI response filtering for age-appropriate content
+- **User Privacy**: Minimal data collection, secure API endpoints
+- **Parental Controls**: Optional monitoring and restriction features
+- **Rate Limiting**: 100 requests per 15 minutes per IP
 
-### Accessibility
-- **Visual Impairment**: Screen reader compatibility
-- **Hearing Impairment**: Visual alternatives for audio content
-- **Motor Impairment**: Large touch targets and voice input
-- **Cognitive Support**: Simple navigation and clear instructions
+### Scalability
+- **Concurrent Users**: Support for 1000+ simultaneous users
+- **Database**: MongoDB with proper indexing and aggregation
+- **Caching**: Redis for frequently accessed data (1-hour TTL)
+- **CDN**: Global content delivery for media files
+- **Auto-scaling**: Ready for horizontal scaling with microservices architecture
 
 ## Business Model
 
